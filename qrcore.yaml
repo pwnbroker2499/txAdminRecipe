@@ -75,7 +75,7 @@ tasks:
     
   - action: download_github
     dest: ./resources/[standalone]/weathersync
-    ref: main
+    ref: master
     src: https://github.com/kibook/weathersync
 
   # Download QRCore resources
