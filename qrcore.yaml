@@ -381,10 +381,23 @@ tasks:
     ref: main
     dest: ./resources/[rexshack]/rsg-stable
 
-  # Swap Files  
+  # Swap Shared and Inventory Files  
   - action: remove_path
     path: ./resources/[framework]/qr-core/shared/
-  
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/txAdminRecipe/tree/main/supporting/shared
+    ref: main
+    dest: ./resources/[framework]/qr-core/shared/
+    
+  - action: remove_path
+    path: ./resources/[framework]/qr-inventory/html/images
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/txAdminRecipe/tree/main/supporting/images
+    ref: main
+    dest: ./resources/[framework]/qr-inventory/html/images
+    
   # Clean up
   - action: remove_path
     path: ./tmp
