@@ -380,6 +380,10 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-stable
     ref: main
     dest: ./resources/[rexshack]/rsg-stable
+
+  # Swap Files  
+  - action: remove_path
+    path: ./resources/[framework]/qr-core/shared/
   
   # Clean up
   - action: remove_path
