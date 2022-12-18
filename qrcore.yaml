@@ -385,19 +385,17 @@ tasks:
   - action: remove_path
     path: ./resources/[framework]/qr-core/shared/
     
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/txAdminRecipe/tree/main/supporting/shared
-    ref: main
+  - action: move_path
+    src: ./tmp/QRCore/supporting/shared
     dest: ./resources/[framework]/qr-core/shared/
     
   - action: remove_path
     path: ./resources/[framework]/qr-inventory/html/images
     
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/txAdminRecipe/tree/main/supporting/images
-    ref: main
+  - action: move_path
+    src: ./tmp/QRCore/supporting/images
     dest: ./resources/[framework]/qr-inventory/html/images
-    
+        
   # Clean up
   - action: remove_path
     path: ./tmp
