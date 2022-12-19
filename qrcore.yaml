@@ -161,11 +161,6 @@ tasks:
     dest: ./resources/[framework]/qr-target
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-hud
-    ref: main
-    dest: ./resources/[framework]/qr-hud
-    
-  - action: download_github
     src: https://github.com/QRCore-RedM-Re/qr-weapons
     ref: main
     dest: ./resources/[framework]/qr-weapons
@@ -380,6 +375,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-stable
     ref: main
     dest: ./resources/[rexshack]/rsg-stable
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-hud
+    ref: main
+    dest: ./resources/[rexshack]/rsg-hud
 
   # Swap Shared and Inventory Files  
   - action: remove_path
