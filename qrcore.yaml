@@ -380,6 +380,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-hud
     ref: main
     dest: ./resources/[rexshack]/rsg-hud
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-weaponsmith
+    ref: main
+    dest: ./resources/[rexshack]/rsg-weaponsmith
 
   # Swap Shared and Inventory Files  
   - action: remove_path
