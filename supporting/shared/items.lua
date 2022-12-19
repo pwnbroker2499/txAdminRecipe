@@ -240,20 +240,40 @@ QRShared.Items = {
     ['bposhovel']  = {['name'] = 'bposhovel',  ['label'] = 'BPO Shovel',  ['weight'] = 0, ['type'] = 'item', ['image'] = 'bposhovel.png',  ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'blueprint original'},
     ['bpoaxe']     = {['name'] = 'bpoaxe',     ['label'] = 'BPO Axe',     ['weight'] = 0, ['type'] = 'item', ['image'] = 'bpoaxe.png',     ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'blueprint original'},
     ['bpopickaxe'] = {['name'] = 'bpopickaxe', ['label'] = 'BPO PickAxe', ['weight'] = 0, ['type'] = 'item', ['image'] = 'bpopickaxe.png', ['unique'] = true, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'blueprint original'},
+
     -- bpcs
     ['bpcshovel']  = {['name'] = 'bpcshovel',  ['label'] = 'BPC Shovel',  ['weight'] = 0, ['type'] = 'item', ['image'] = 'bpcshovel.png',  ['unique'] = true, ['useable'] = true,    ['shouldClose'] = true,    ['combinable'] = nil,    ['level'] = 0,    ['description'] = '3 x Steel 1 x Wood'},
     ['bpcaxe']     = {['name'] = 'bpcaxe',     ['label'] = 'BPC Axe',     ['weight'] = 0, ['type'] = 'item', ['image'] = 'bpcaxe.png',     ['unique'] = true, ['useable'] = true,    ['shouldClose'] = true,    ['combinable'] = nil,    ['level'] = 0,    ['description'] = '3 x Steel 1 x Wood'},
     ['bpcpickaxe'] = {['name'] = 'bpcpickaxe', ['label'] = 'BPC PickAxe', ['weight'] = 0, ['type'] = 'item', ['image'] = 'bpcpickaxe.png', ['unique'] = true, ['useable'] = true,    ['shouldClose'] = true,    ['combinable'] = nil,    ['level'] = 0,    ['description'] = '3 x Steel 1 x Wood'},
+
     -- item
     ['shovel']  = {['name'] = 'shovel',  ['label'] = 'Shovel',  ['weight'] = 100, ['type'] = 'item', ['image'] = 'shovel.png',  ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'equipment for digging'},
     ['axe']     = {['name'] = 'axe',     ['label'] = 'Axe',     ['weight'] = 100, ['type'] = 'item', ['image'] = 'axe.png',     ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'equipment for chopping'},
     ['pickaxe'] = {['name'] = 'pickaxe', ['label'] = 'PickAxe', ['weight'] = 100, ['type'] = 'item', ['image'] = 'pickaxe.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'equipment for mining'},
+
     -- materials
     ['copper']   = {['name'] = 'copper',   ['label'] = 'Copper',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'copper.png',   ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'crafting material'},
     ['aluminum'] = {['name'] = 'aluminum', ['label'] = 'Aluminum', ['weight'] = 100, ['type'] = 'item', ['image'] = 'aluminum.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'crafting material'},
     ['iron']     = {['name'] = 'iron',     ['label'] = 'Iron',     ['weight'] = 100, ['type'] = 'item', ['image'] = 'iron.png',     ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'crafting material'},
     ['steel']    = {['name'] = 'steel',    ['label'] = 'Steel',    ['weight'] = 100, ['type'] = 'item', ['image'] = 'steel.png',    ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'crafting material'},
     ['wood']     = {['name'] = 'wood',     ['label'] = 'Wood',     ['weight'] = 100, ['type'] = 'item', ['image'] = 'wood.png',     ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'crafting material'},
+
+    -- weapon crafting parts
+    ['trigger']  = { ['name'] = 'trigger',  ['label'] = 'Trigger',  ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['hammer']   = { ['name'] = 'hammer',   ['label'] = 'Hammer',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['barrel']   = { ['name'] = 'barrel',   ['label'] = 'Barrel',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['spring']   = { ['name'] = 'spring',   ['label'] = 'Spring',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['frame']    = { ['name'] = 'frame',    ['label'] = 'Frame',    ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['grip']     = { ['name'] = 'grip',     ['label'] = 'Grip',     ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['cylinder'] = { ['name'] = 'cylinder', ['label'] = 'Cylinder', ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['stock']    = { ['name'] = 'stock',    ['label'] = 'Stock',    ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['sight']    = { ['name'] = 'sight',    ['label'] = 'Sight',    ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['bolt']     = { ['name'] = 'bolt',     ['label'] = 'Bolt',     ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['sling']    = { ['name'] = 'sling',    ['label'] = 'Sling',    ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    ['action']   = { ['name'] = 'action',   ['label'] = 'Action',   ['weight'] = 100, ['type'] = 'item', ['image'] = 'weaponpart.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'weapon crafting part'},
+    
+    -- weaponsmith items
+    ['cleankit'] = { ['name'] = 'cleankit',  ['label'] = 'Cleaning Kit', ['weight'] = 100, ['type'] = 'item', ['image'] = 'cleankit.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'for cleaning weapons'},
 
     -- throwables
     ['dynamitestick']     = {['name'] = 'dynamitestick',     ['label'] = 'Stick Dynamite',    ['weight'] = 200, ['type'] = 'item', ['image'] = 'weapon_thrown_dynamite.png',          ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Dynamite'},
