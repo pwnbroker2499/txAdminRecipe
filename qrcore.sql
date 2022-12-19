@@ -215,6 +215,8 @@ KEY `type` (`type`)
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
 ('ambulance', 0, 'boss'),
+('weaponsmith', 0, 'boss'),
+('saloontender', 0, 'boss'),
 ('railroad', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `telegrams` (
