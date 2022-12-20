@@ -77,6 +77,11 @@ tasks:
     dest: ./resources/[standalone]/weathersync
     ref: main
     src: https://github.com/RexShack/weathersync
+    
+  - action: download_github
+    dest: ./resources/[standalone]/xsound
+    ref: master
+    src: https://github.com/RexShack/xsound
 
   # Download QRCore resources
   
@@ -385,6 +390,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-weaponsmith
     ref: main
     dest: ./resources/[rexshack]/rsg-weaponsmith
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-saloontender
+    ref: main
+    dest: ./resources/[rexshack]/rsg-saloontender
 
   # Swap Shared and Inventory Files  
   - action: remove_path
