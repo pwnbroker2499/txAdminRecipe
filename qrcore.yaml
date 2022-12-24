@@ -10,20 +10,20 @@ tasks:
   - action: download_github
     src: https://github.com/Rexshack-RedM/txAdminRecipe
     ref: main
-    dest: ./tmp/QRCore
+    dest: ./tmp/RSGCore
 
   - action: move_path
-    src: ./tmp/QRCore/server.cfg
+    src: ./tmp/RSGCore/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/QRCore/myLogo.png
+    src: ./tmp/RSGCore/myLogo.png
     dest: ./myLogo.png
 
   # Prepare Database
   - action: connect_database
   - action: query_database
-    file: ./tmp/QRCore/qrcore.sql
+    file: ./tmp/RSGCore/rsgcore.sql
 
   # Downloading Standalone Resources  
   - action: download_github
@@ -44,9 +44,9 @@ tasks:
     src: https://github.com/QRCore-RedM-Re/connectqueue
 
   - action: download_github
-    dest: ./resources/[standalone]/qr_menu
+    dest: ./resources/[standalone]/rsg-menubase
     ref: main
-    src: https://github.com/QRCore-RedM-Re/qr_menu
+    src: https://github.com/QRCore-RedM-Re/rsg-menubase
     
   - action: download_github
     dest: ./resources/[standalone]/progressbar
@@ -83,92 +83,87 @@ tasks:
     ref: master
     src: https://github.com/RexShack/xsound
 
-  # Download QRCore resources
+  # Download RSGCore resources
   
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-core
+    src: https://github.com/Rexshack-RedM/rsg-core
     ref: main
-    dest: ./resources/[framework]/qr-core
+    dest: ./resources/[framework]/rsg-core
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-inventory
+    src: https://github.com/Rexshack-RedM/rsg-inventory
     ref: main
-    dest: ./resources/[framework]/qr-inventory
+    dest: ./resources/[framework]/rsg-inventory
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-multicharacter
+    src: https://github.com/Rexshack-RedM/rsg-multicharacter
     ref: main
-    dest: ./resources/[framework]/qr-multicharacter
+    dest: ./resources/[framework]/rsg-multicharacter
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-management
+    src: https://github.com/Rexshack-RedM/rsg-management
     ref: main
-    dest: ./resources/[framework]/qr-management
-
-  - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-adminmenu
-    ref: main
-    dest: ./resources/[framework]/qr-adminmenu
+    dest: ./resources/[framework]/rsg-management
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-appearance
+    src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
-    dest: ./resources/[framework]/qr-appearance
+    dest: ./resources/[framework]/rsg-appearance
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-clothes
+    src: https://github.com/Rexshack-RedM/rsg-clothes
     ref: main
-    dest: ./resources/[framework]/qr-clothes
+    dest: ./resources/[framework]/rsg-clothes
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-ambulancejob
+    src: https://github.com/Rexshack-RedM/rsg-ambulancejob
     ref: main
-    dest: ./resources/[framework]/qr-ambulancejob
+    dest: ./resources/[framework]/rsg-ambulancejob
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-banking
+    src: https://github.com/Rexshack-RedM/rsg-banking
     ref: main
-    dest: ./resources/[framework]/qr-banking
+    dest: ./resources/[framework]/rsg-banking
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-input
+    src: https://github.com/Rexshack-RedM/rsg-input
     ref: main
-    dest: ./resources/[framework]/qr-input
+    dest: ./resources/[framework]/rsg-input
         
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-lockpick
+    src: https://github.com/Rexshack-RedM/rsg-lockpick
     ref: main
-    dest: ./resources/[framework]/qr-lockpick
+    dest: ./resources/[framework]/rsg-lockpick
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-menu
+    src: https://github.com/Rexshack-RedM/rsg-menu
     ref: main
-    dest: ./resources/[framework]/qr-menu
+    dest: ./resources/[framework]/rsg-menu
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-policejob
+    src: https://github.com/Rexshack-RedM/rsg-policejob
     ref: main
-    dest: ./resources/[framework]/qr-policejob
+    dest: ./resources/[framework]/rsg-policejob
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-scoreboard
+    src: https://github.com/Rexshack-RedM/rsg-scoreboard
     ref: main
-    dest: ./resources/[framework]/qr-scoreboard
+    dest: ./resources/[framework]/rsg-scoreboard
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-spawn
+    src: https://github.com/Rexshack-RedM/rsg-spawn
     ref: main
-    dest: ./resources/[framework]/qr-spawn
+    dest: ./resources/[framework]/rsg-spawn
 
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-target
+    src: https://github.com/Rexshack-RedM/rsg-target
     ref: main
-    dest: ./resources/[framework]/qr-target
+    dest: ./resources/[framework]/rsg-target
     
   - action: download_github
-    src: https://github.com/QRCore-RedM-Re/qr-weapons
+    src: https://github.com/Rexshack-RedM/rsg-weapons
     ref: main
-    dest: ./resources/[framework]/qr-weapons
+    dest: ./resources/[framework]/rsg-weapons
   
   # Download Rexshack MapMod resources
   
@@ -398,18 +393,18 @@ tasks:
 
   # Swap Shared and Inventory Files  
   - action: remove_path
-    path: ./resources/[framework]/qr-core/shared/
+    path: ./resources/[framework]/rsg-core/shared/
     
   - action: move_path
-    src: ./tmp/QRCore/supporting/shared
-    dest: ./resources/[framework]/qr-core/shared/
+    src: ./tmp/RSGCore/supporting/shared
+    dest: ./resources/[framework]/rsg-core/shared/
     
   - action: remove_path
-    path: ./resources/[framework]/qr-inventory/html/images
+    path: ./resources/[framework]/rsg-inventory/html/images
     
   - action: move_path
-    src: ./tmp/QRCore/supporting/images
-    dest: ./resources/[framework]/qr-inventory/html/images
+    src: ./tmp/RSGCore/supporting/images
+    dest: ./resources/[framework]/rsg-inventory/html/images
         
   # Clean up
   - action: remove_path

@@ -1,4 +1,4 @@
-QRShared.Locations = {
+RSGShared.Locations = {
     -- add here
 
 }

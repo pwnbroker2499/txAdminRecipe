@@ -1,8 +1,8 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
-QRShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
+RSGShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 
-QRShared.Jobs = {
+RSGShared.Jobs = {
     ['unemployed'] = {
         label = 'Civilian',
         defaultDuty = true,

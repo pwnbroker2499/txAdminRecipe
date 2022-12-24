@@ -1,8 +1,8 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
--- use QRCore.Shared.Keybinds['J']
+-- use RSGCore.Shared.Keybinds['J']
 
-QRShared.Keybinds = {
+RSGShared.Keybinds = {
     -- Letters
     ['A'] = 0x7065027D,
     ['B'] = 0x4CC0E2FE,

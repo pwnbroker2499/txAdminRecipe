@@ -1,6 +1,6 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
-QRShared.Vehicles = {
+RSGShared.Vehicles = {
 	['CART01'] = {
 		['name'] = 'Wooden Cart 1',
 		['brand'] = '?',

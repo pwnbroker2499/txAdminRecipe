@@ -1,6 +1,6 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
-QRShared.Items = {
+RSGShared.Items = {
     -- Items
     ['water']        = {['name'] = 'water',        ['label'] = 'Water',         ['weight'] = 500, ['type'] = 'item', ['image'] = 'water.png',        ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Drinking Water'},
     ['bread']        = {['name'] = 'bread',        ['label'] = 'Bread Roll',    ['weight'] = 125, ['type'] = 'item', ['image'] = 'bread.png',        ['unique'] = false, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil, ['level'] = 0, ['description'] = 'Bread Roll'},

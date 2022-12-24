@@ -1,4 +1,4 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
 local StringCharset = {}
 local NumberCharset = {}
@@ -7,17 +7,17 @@ for i = 48, 57 do NumberCharset[#NumberCharset + 1] = string.char(i) end
 for i = 65, 90 do StringCharset[#StringCharset + 1] = string.char(i) end
 for i = 97, 122 do StringCharset[#StringCharset + 1] = string.char(i) end
 
-function QRShared.RandomStr(length)
+function RSGShared.RandomStr(length)
     if length <= 0 then return '' end
-    return QRShared.RandomStr(length - 1) .. StringCharset[math.random(1, #StringCharset)]
+    return RSGShared.RandomStr(length - 1) .. StringCharset[math.random(1, #StringCharset)]
 end
 
-function QRShared.RandomInt(length)
+function RSGShared.RandomInt(length)
     if length <= 0 then return '' end
-    return QRShared.RandomInt(length - 1) .. NumberCharset[math.random(1, #NumberCharset)]
+    return RSGShared.RandomInt(length - 1) .. NumberCharset[math.random(1, #NumberCharset)]
 end
 
-function QRShared.SplitStr(str, delimiter)
+function RSGShared.SplitStr(str, delimiter)
     local result = {}
     local from = 1
     local delim_from, delim_to = string.find(str, delimiter, from)
@@ -30,39 +30,39 @@ function QRShared.SplitStr(str, delimiter)
     return result
 end
 
-function QRShared.Trim(value)
+function RSGShared.Trim(value)
     if not value then return nil end
     return (string.gsub(value, '^%s*(.-)%s*$', '%1'))
 end
 
-function QRShared.FirstToUpper(value)
+function RSGShared.FirstToUpper(value)
     if not value then return nil end
     return (value:gsub("^%l", string.upper))
 end
 
-function QRShared.Round(value, numDecimalPlaces)
+function RSGShared.Round(value, numDecimalPlaces)
     if not numDecimalPlaces then return math.floor(value + 0.5) end
     local power = 10 ^ numDecimalPlaces
     return math.floor((value * power) + 0.5) / (power)
 end
 
-function QRShared.ChangeVehicleExtra(vehicle, extra, enable)
+function RSGShared.ChangeVehicleExtra(vehicle, extra, enable)
     if DoesExtraExist(vehicle, extra) then
         if enable then
             SetVehicleExtra(vehicle, extra, false)
             if not IsVehicleExtraTurnedOn(vehicle, extra) then
-                QRShared.ChangeVehicleExtra(vehicle, extra, enable)
+                RSGShared.ChangeVehicleExtra(vehicle, extra, enable)
             end
         else
             SetVehicleExtra(vehicle, extra, true)
             if IsVehicleExtraTurnedOn(vehicle, extra) then
-                QRShared.ChangeVehicleExtra(vehicle, extra, enable)
+                RSGShared.ChangeVehicleExtra(vehicle, extra, enable)
             end
         end
     end
 end
 
-function QRShared.SetDefaultVehicleExtras(vehicle, config)
+function RSGShared.SetDefaultVehicleExtras(vehicle, config)
     -- Clear Extras
     for i = 1, 20 do
         if DoesExtraExist(vehicle, i) then
@@ -71,16 +71,16 @@ function QRShared.SetDefaultVehicleExtras(vehicle, config)
     end
 
     for id, enabled in pairs(config) do
-        QRShared.ChangeVehicleExtra(vehicle, tonumber(id), type(enabled) == 'boolean' and enabled or true)
+        RSGShared.ChangeVehicleExtra(vehicle, tonumber(id), type(enabled) == 'boolean' and enabled or true)
     end
 end
 
-QRShared.StarterItems = {
+RSGShared.StarterItems = {
     ['bread'] 			= { amount = 10, item = 'bread' },
     ['water_bottle'] 	= { amount = 10, item = 'water_bottle' },
 }
 
-QRShared.MaleNoGloves = {
+RSGShared.MaleNoGloves = {
     [0] = true,
     [1] = true,
     [2] = true,
@@ -118,7 +118,7 @@ QRShared.MaleNoGloves = {
     [132] = true
 }
 
-QRShared.FemaleNoGloves = {
+RSGShared.FemaleNoGloves = {
     [0] = true,
     [1] = true,
     [2] = true,

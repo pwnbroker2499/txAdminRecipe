@@ -1,6 +1,6 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
-QRShared.Weapons = {
+RSGShared.Weapons = {
 	--revolver
 	[`weapon_revolver_cattleman`] 				= {['name'] = 'weapon_revolver_cattleman', 				['attachPoint'] = 2,  		['label'] = 'Cattleman',						['weight'] = 1000,	['type'] = 'weapon', 		['ammotype'] = 'AMMO_REVOLVER', 			['image'] = 'weapon_revolver_cattleman.png',				['unique'] = true,		['useable'] = true,		['level'] = 0,		['description'] = 'Takes Revolver Ammo'},
 	[`weapon_revolver_cattleman_mexican`] 		= {['name'] = 'weapon_revolver_cattleman_mexican', 		['attachPoint'] = 2,		['label'] = 'Cattleman Mexican',				['weight'] = 1000,	['type'] = 'weapon', 		['ammotype'] = 'AMMO_REVOLVER', 			['image'] = 'weapon_revolver_cattleman_mexican.png',		['unique'] = true,		['useable'] = true,		['level'] = 0,		['description'] = 'Takes Revolver Ammo'},

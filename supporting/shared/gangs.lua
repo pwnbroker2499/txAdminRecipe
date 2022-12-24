@@ -1,6 +1,6 @@
-QRShared = QRShared or {}
+RSGShared = RSGShared or {}
 
-QRShared.Gangs = {
+RSGShared.Gangs = {
 	['none'] = {
 		label = 'No Gang',
 		grades = {
