@@ -46,7 +46,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/rsg-menubase
     ref: main
-    src: https://github.com/QRCore-RedM-Re/rsg-menubase
+    src: https://github.com/Rexshack-RedM/rsg-menubase
     
   - action: download_github
     dest: ./resources/[standalone]/progressbar
