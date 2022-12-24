@@ -386,21 +386,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/redm-ymaps
     ref: main
     dest: ./resources/[mapmods]/redm-ymaps
-
-  # Swap Shared and Inventory Files  
-  - action: remove_path
-    path: ./resources/[framework]/rsg-core/shared/
-    
-  - action: move_path
-    src: ./tmp/RSGCore/supporting/shared
-    dest: ./resources/[framework]/rsg-core/shared/
-    
-  - action: remove_path
-    path: ./resources/[framework]/rsg-inventory/html/images
-    
-  - action: move_path
-    src: ./tmp/RSGCore/supporting/images
-    dest: ./resources/[framework]/rsg-inventory/html/images
         
   # Clean up
   - action: remove_path
