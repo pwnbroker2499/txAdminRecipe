@@ -49,12 +49,7 @@ tasks:
     dest: ./resources/[standalone]/connectqueue
     ref: main
     src: https://github.com/QRCore-RedM-Re/connectqueue
-
-  - action: download_github
-    dest: ./resources/[standalone]/rsg-menubase
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-menubase
-    
+ 
   - action: download_github
     dest: ./resources/[standalone]/progressbar
     ref: main
@@ -371,6 +366,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-saloontender
     ref: main
     dest: ./resources/[framework]/rsg-saloontender
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-menubase
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-menubase
     
   # Download Rexshack MapMod resources
   
