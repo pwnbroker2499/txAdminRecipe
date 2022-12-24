@@ -82,6 +82,11 @@ tasks:
     dest: ./resources/[standalone]/xsound
     ref: master
     src: https://github.com/RexShack/xsound
+    
+  - action: download_github
+    dest: ./resources/[standalone]/interact-sound 
+    ref: main
+    src: https://github.com/Rexshack-RedM/interact-sound 
 
   # Download RSGCore resources
   
@@ -164,7 +169,202 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-weapons
     ref: main
     dest: ./resources/[framework]/rsg-weapons
+      
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-doorlock
+    ref: main
+    dest: ./resources/[framework]/rsg-doorlock
+           
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-shops
+    ref: main
+    dest: ./resources/[framework]/rsg-shops
+                
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-radialmenu
+    ref: main
+    dest: ./resources/[framework]/rsg-radialmenu
   
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-essentials
+    ref: main
+    dest: ./resources/[framework]/rsg-essentials
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-travel
+    ref: main
+    dest: ./resources/[framework]/rsg-travel
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-outlawpost
+    ref: main
+    dest: ./resources/[framework]/rsg-outlawpost
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-fasttravel
+    ref: main
+    dest: ./resources/[framework]/rsg-fasttravel
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-pets
+    ref: main
+    dest: ./resources/[framework]/rsg-pets
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-storage
+    ref: main
+    dest: ./resources/[framework]/rsg-storage
+      
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-indiantobacco
+    ref: main
+    dest: ./resources/[framework]/rsg-indiantobacco
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-moonshiner
+    ref: main
+    dest: ./resources/[framework]/rsg-moonshiner
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-treasure
+    ref: main
+    dest: ./resources/[framework]/rsg-treasure
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-rhodesbankheist
+    ref: main
+    dest: ./resources/[framework]/rsg-rhodesbankheist
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-valentinebankheist
+    ref: main
+    dest: ./resources/[framework]/rsg-valentinebankheist
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-crafting
+    ref: main
+    dest: ./resources/[framework]/rsg-crafting
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-gatherer
+    ref: main
+    dest: ./resources/[framework]/rsg-gatherer
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-mining
+    ref: main
+    dest: ./resources/[framework]/rsg-mining
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-properties
+    ref: main
+    dest: ./resources/[framework]/rsg-properties
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-telegram
+    ref: main
+    dest: ./resources/[framework]/rsg-telegram
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-butcher
+    ref: main
+    dest: ./resources/[framework]/rsg-butcher
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-trapperplus
+    ref: main
+    dest: ./resources/[framework]/rsg-trapperplus
+        
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-looting
+    ref: main
+    dest: ./resources/[framework]/rsg-looting
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-rental
+    ref: main
+    dest: ./resources/[framework]/rsg-rental
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-fishing
+    ref: main
+    dest: ./resources/[framework]/rsg-fishing
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-fishvendor
+    ref: main
+    dest: ./resources/[framework]/rsg-fishvendor
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-canoe
+    ref: main
+    dest: ./resources/[framework]/rsg-canoe
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-drinker
+    ref: main
+    dest: ./resources/[framework]/rsg-drinker
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-piano
+    ref: main
+    dest: ./resources/[framework]/rsg-piano
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-contraband
+    ref: main
+    dest: ./resources/[framework]/rsg-contraband
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-goldpanning
+    ref: main
+    dest: ./resources/[framework]/rsg-goldpanning
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-sellvendor
+    ref: main
+    dest: ./resources/[framework]/rsg-sellvendor
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-cooking
+    ref: main
+    dest: ./resources/[framework]/rsg-cooking
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-goldsmelt
+    ref: main
+    dest: ./resources/[framework]/rsg-goldsmelt
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-lawbadge
+    ref: main
+    dest: ./resources/[framework]/rsg-lawbadge
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-farmer
+    ref: main
+    dest: ./resources/[framework]/rsg-farmer
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-stable
+    ref: main
+    dest: ./resources/[framework]/rsg-stable
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-hud
+    ref: main
+    dest: ./resources/[framework]/rsg-hud
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-weaponsmith
+    ref: main
+    dest: ./resources/[framework]/rsg-weaponsmith
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-saloontender
+    ref: main
+    dest: ./resources/[framework]/rsg-saloontender
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
@@ -186,210 +386,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/redm-ymaps
     ref: main
     dest: ./resources/[mapmods]/redm-ymaps
-
-  # Download Rexshack standalone resources
-  
-  - action: download_github
-    dest: ./resources/[standalone]/interact-sound 
-    ref: main
-    src: https://github.com/Rexshack-RedM/interact-sound 
-    
-  # Download Rexshack Gaming resources
-      
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-doorlock
-    ref: main
-    dest: ./resources/[rexshack]/rsg-doorlock
-           
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-shops
-    ref: main
-    dest: ./resources/[rexshack]/rsg-shops
-                
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-radialmenu
-    ref: main
-    dest: ./resources/[rexshack]/rsg-radialmenu
-  
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-essentials
-    ref: main
-    dest: ./resources/[rexshack]/rsg-essentials
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-travel
-    ref: main
-    dest: ./resources/[rexshack]/rsg-travel
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-outlawpost
-    ref: main
-    dest: ./resources/[rexshack]/rsg-outlawpost
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fasttravel
-    ref: main
-    dest: ./resources/[rexshack]/rsg-fasttravel
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-pets
-    ref: main
-    dest: ./resources/[rexshack]/rsg-pets
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-storage
-    ref: main
-    dest: ./resources/[rexshack]/rsg-storage
-      
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-indiantobacco
-    ref: main
-    dest: ./resources/[rexshack]/rsg-indiantobacco
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-moonshiner
-    ref: main
-    dest: ./resources/[rexshack]/rsg-moonshiner
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-treasure
-    ref: main
-    dest: ./resources/[rexshack]/rsg-treasure
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-rhodesbankheist
-    ref: main
-    dest: ./resources/[rexshack]/rsg-rhodesbankheist
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-valentinebankheist
-    ref: main
-    dest: ./resources/[rexshack]/rsg-valentinebankheist
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-crafting
-    ref: main
-    dest: ./resources/[rexshack]/rsg-crafting
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-gatherer
-    ref: main
-    dest: ./resources/[rexshack]/rsg-gatherer
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-mining
-    ref: main
-    dest: ./resources/[rexshack]/rsg-mining
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-properties
-    ref: main
-    dest: ./resources/[rexshack]/rsg-properties
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-telegram
-    ref: main
-    dest: ./resources/[rexshack]/rsg-telegram
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-butcher
-    ref: main
-    dest: ./resources/[rexshack]/rsg-butcher
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-trapperplus
-    ref: main
-    dest: ./resources/[rexshack]/rsg-trapperplus
-        
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-looting
-    ref: main
-    dest: ./resources/[rexshack]/rsg-looting
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-rental
-    ref: main
-    dest: ./resources/[rexshack]/rsg-rental
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fishing
-    ref: main
-    dest: ./resources/[rexshack]/rsg-fishing
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fishvendor
-    ref: main
-    dest: ./resources/[rexshack]/rsg-fishvendor
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-canoe
-    ref: main
-    dest: ./resources/[rexshack]/rsg-canoe
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-drinker
-    ref: main
-    dest: ./resources/[rexshack]/rsg-drinker
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-piano
-    ref: main
-    dest: ./resources/[rexshack]/rsg-piano
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-contraband
-    ref: main
-    dest: ./resources/[rexshack]/rsg-contraband
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-goldpanning
-    ref: main
-    dest: ./resources/[rexshack]/rsg-goldpanning
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-sellvendor
-    ref: main
-    dest: ./resources/[rexshack]/rsg-sellvendor
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-cooking
-    ref: main
-    dest: ./resources/[rexshack]/rsg-cooking
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-goldsmelt
-    ref: main
-    dest: ./resources/[rexshack]/rsg-goldsmelt
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-lawbadge
-    ref: main
-    dest: ./resources/[rexshack]/rsg-lawbadge
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-farmer
-    ref: main
-    dest: ./resources/[rexshack]/rsg-farmer
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-stable
-    ref: main
-    dest: ./resources/[rexshack]/rsg-stable
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-hud
-    ref: main
-    dest: ./resources/[rexshack]/rsg-hud
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-weaponsmith
-    ref: main
-    dest: ./resources/[rexshack]/rsg-weaponsmith
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-saloontender
-    ref: main
-    dest: ./resources/[rexshack]/rsg-saloontender
 
   # Swap Shared and Inventory Files  
   - action: remove_path
