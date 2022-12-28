@@ -372,6 +372,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-menubase
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-prison
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-prison
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
