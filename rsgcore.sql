@@ -216,7 +216,19 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
 ('medic', 0, 'boss'),
 ('weaponsmith', 0, 'boss'),
-('saloontender', 0, 'boss'),
+('valsaloontender', 0, 'boss'),
+('blasaloontender', 0, 'boss'),
+('rhosaloontender', 0, 'boss'),
+('stdenissaloontender1', 0, 'boss'),
+('stdenissaloontender2', 0, 'boss'),
+('vansaloontender', 0, 'boss'),
+('armsaloontender', 0, 'boss'),
+('tumsaloontender', 0, 'boss'),
+('moonsaloontender1', 0, 'boss'),
+('moonsaloontender2', 0, 'boss'),
+('moonsaloontender3', 0, 'boss'),
+('moonsaloontender4', 0, 'boss'),
+('moonsaloontender5', 0, 'boss');
 ('railroad', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `telegrams` (
