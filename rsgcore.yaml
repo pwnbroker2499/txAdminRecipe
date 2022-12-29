@@ -382,6 +382,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-wholesaletrader
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-npcs
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-npcs
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
