@@ -123,9 +123,9 @@ tasks:
     dest: ./resources/[framework]/rsg-clothes
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-ambulancejob
+    src: https://github.com/Rexshack-RedM/rsg-medic
     ref: main
-    dest: ./resources/[framework]/rsg-ambulancejob
+    dest: ./resources/[framework]/rsg-medic
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-banking
