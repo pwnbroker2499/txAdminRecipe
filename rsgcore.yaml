@@ -392,6 +392,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-npcs
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-jobwagon
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-jobwagon
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
