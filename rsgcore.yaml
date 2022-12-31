@@ -293,6 +293,11 @@ tasks:
     dest: ./resources/[framework]/rsg-fishing
     
   - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-adminmenu
+    ref: main
+    dest: ./resources/[framework]/rsg-adminmenu
+    
+  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-fishvendor
     ref: main
     dest: ./resources/[framework]/rsg-fishvendor
