@@ -229,7 +229,8 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('moonsaloontender3', 0, 'boss'),
 ('moonsaloontender4', 0, 'boss'),
 ('moonsaloontender5', 0, 'boss'),
-('wholesaletrader', 0, 'boss'),
+('stdeniswholesale', 0, 'boss'),
+('blkwholesale', 0, 'boss'),
 ('railroad', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `telegrams` (
