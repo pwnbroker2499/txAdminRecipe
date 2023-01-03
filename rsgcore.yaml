@@ -358,9 +358,9 @@ tasks:
     dest: ./resources/[framework]/rsg-farmer
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-stable
+    src: https://github.com/Rexshack-RedM/rsg-horses
     ref: main
-    dest: ./resources/[framework]/rsg-stable
+    dest: ./resources/[framework]/rsg-horses
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-hud
