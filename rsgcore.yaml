@@ -89,6 +89,11 @@ tasks:
     dest: ./resources/[standalone]/interact-sound 
     ref: main
     src: https://github.com/Rexshack-RedM/interact-sound 
+    
+  - action: download_github
+    dest: ./resources/[standalone]/menu_base
+    ref: main
+    src: https://github.com/Rexshack-RedM/menu_base
 
   # Download RSGCore resources
   
