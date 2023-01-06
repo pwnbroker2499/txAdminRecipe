@@ -407,6 +407,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-jobwagon
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-horsetrainer
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-horsetrainer
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
