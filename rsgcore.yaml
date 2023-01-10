@@ -412,6 +412,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-horsetrainer
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-billing
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-billing
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
