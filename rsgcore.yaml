@@ -417,6 +417,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-billing
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-wardrobe
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-wardrobe
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
