@@ -53,7 +53,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/progressbar
     ref: main
-    src: https://github.com/QRCore-RedM-Re/progressbar
+    src: https://github.com/Rexshack-RedM/progressbar
     
   - action: download_github
     dest: ./resources/[standalone]/safecracker
