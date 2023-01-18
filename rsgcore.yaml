@@ -422,6 +422,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-wardrobe
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-metabolism
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-metabolism
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
