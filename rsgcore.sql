@@ -294,3 +294,11 @@ CREATE TABLE IF NOT EXISTS `player_bills` (
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `player_weapons` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `serial` varchar(16) NOT NULL,
+  `citizenid` varchar(9) NOT NULL,
+  `components` varchar(4096) NOT NULL DEFAULT '{}',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
