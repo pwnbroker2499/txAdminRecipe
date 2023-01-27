@@ -427,6 +427,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-metabolism
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-barbers
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-barbers
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
