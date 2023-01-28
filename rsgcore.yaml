@@ -266,11 +266,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-mining
     ref: main
     dest: ./resources/[framework]/rsg-mining
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-properties
-    ref: main
-    dest: ./resources/[framework]/rsg-properties
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
