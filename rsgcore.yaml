@@ -95,6 +95,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/menu_base
     
+  - action: download_github
+    dest: ./resources/[standalone]/db-femped
+    ref: main
+    src: https://github.com/RexShack/db-femped
+    
   - action: waste_time # prevent github throttling
     seconds: 10
 
