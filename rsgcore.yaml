@@ -444,6 +444,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-barbers
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-bathing
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-bathing
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
