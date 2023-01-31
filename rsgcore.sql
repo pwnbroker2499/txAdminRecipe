@@ -243,6 +243,7 @@ CREATE TABLE IF NOT EXISTS `telegrams` (
   `sentDate` varchar(25) NOT NULL,
   `message` varchar(455) NOT NULL,
   `status` varchar(1) NOT NULL DEFAULT '0',
+  `birdstatus` TINYINT(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
