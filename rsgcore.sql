@@ -237,6 +237,7 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 CREATE TABLE IF NOT EXISTS `telegrams` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(255) NOT NULL,
+  `recipient` varchar(255) NOT NULL,
   `sender` varchar(255) NOT NULL,
   `sendername` varchar(255) NOT NULL,
   `subject` varchar(255) NOT NULL,
