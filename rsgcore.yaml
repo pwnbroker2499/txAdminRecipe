@@ -449,6 +449,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-bathing
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-hotel
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-hotel
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
