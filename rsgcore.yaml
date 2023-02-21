@@ -459,6 +459,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-boats
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-houses
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-houses
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
