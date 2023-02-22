@@ -223,7 +223,12 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('moonsaloontender5', 0, 'boss'),
 ('stdeniswholesale', 0, 'boss'),
 ('blkwholesale', 0, 'boss'),
-('railroad', 0, 'boss');
+('railroad', 0, 'boss'),
+('govenor1', 0, 'boss'),
+('govenor2', 0, 'boss'),
+('govenor3', 0, 'boss'),
+('govenor4', 0, 'boss'),
+('govenor5', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `telegrams` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
