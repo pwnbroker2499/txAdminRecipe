@@ -464,6 +464,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-houses
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-townhall
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-townhall
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
