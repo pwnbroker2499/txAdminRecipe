@@ -62,11 +62,6 @@ tasks:
     dest: ./resources/[standalone]/pma-voice
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
-
-  - action: download_github
-    dest: ./resources/[standalone]/menuv
-    ref: main
-    src: https://github.com/QRCore-RedM-Re/menuv
     
   - action: download_github
     dest: ./resources/[standalone]/weathersync
