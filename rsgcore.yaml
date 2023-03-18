@@ -292,11 +292,6 @@ tasks:
     dest: ./resources/[framework]/rsg-looting
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-rental
-    ref: main
-    dest: ./resources/[framework]/rsg-rental
-    
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-fishing
     ref: main
     dest: ./resources/[framework]/rsg-fishing
