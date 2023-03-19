@@ -472,3 +472,10 @@ INSERT INTO `doors` (`doorid`, `doorstate`) VALUES
 ('1915887592', 1),
 ('3324299212', 1),
 ('1180868565', 1);
+
+CREATE TABLE IF NOT EXISTS `address_book` (
+`id` INT(11) NOT NULL AUTO_INCREMENT,
+`citizenid` VARCHAR(50) NOT NULL,
+`name`  VARCHAR(50) NOT NULL,
+`owner`  VARCHAR(50) NOT NULL,
+PRIMARY KEY (`id`));
