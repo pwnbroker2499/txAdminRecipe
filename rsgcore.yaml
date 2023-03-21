@@ -457,6 +457,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-notes
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-delivery
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-delivery
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
