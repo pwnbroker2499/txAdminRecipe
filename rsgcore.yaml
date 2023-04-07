@@ -247,16 +247,6 @@ tasks:
     dest: ./resources/[framework]/rsg-treasure
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-rhodesbankheist
-    ref: main
-    dest: ./resources/[framework]/rsg-rhodesbankheist
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-valentinebankheist
-    ref: main
-    dest: ./resources/[framework]/rsg-valentinebankheist
-    
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-crafting
     ref: main
     dest: ./resources/[framework]/rsg-crafting
