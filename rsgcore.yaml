@@ -452,6 +452,19 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-delivery
     
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-canteen
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-canteen
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-wildhorse
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-wildhorse
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
