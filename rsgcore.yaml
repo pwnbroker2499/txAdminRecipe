@@ -465,6 +465,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-wildhorse
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-vendor
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-vendor
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
