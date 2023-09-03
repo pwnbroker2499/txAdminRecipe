@@ -482,6 +482,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-railroadjob
     
+  - action: download_github
+    dest: ./resources/[framework]/rsg-playerinfo
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-playerinfo
+    
   # Download Rexshack MapMod resources
   
   - action: download_github
