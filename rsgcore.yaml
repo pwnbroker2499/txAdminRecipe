@@ -99,6 +99,11 @@ tasks:
     dest: ./resources/[standalone]/ip-chat
     ref: main
     src: https://github.com/Rexshack-RedM/ip-chat
+    
+  - action: download_github
+    dest: ./resources/[standalone]/rNotify
+    ref: main
+    src: https://github.com/RexShack/rNotify
         
   - action: waste_time # prevent github throttling
     seconds: 10
