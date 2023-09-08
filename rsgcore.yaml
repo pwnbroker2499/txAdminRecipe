@@ -56,11 +56,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/progressbar
     
   - action: download_github
-    dest: ./resources/[standalone]/safecracker
-    ref: main
-    src: https://github.com/QRCore-RedM-Re/safecracker
-    
-  - action: download_github
     dest: ./resources/[standalone]/PolyZone
     ref: main
     src: https://github.com/QRCore-RedM-Re/PolyZone
@@ -126,11 +121,6 @@ tasks:
     dest: ./resources/[framework]/rsg-multicharacter
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-management
-    ref: main
-    dest: ./resources/[framework]/rsg-management
-    
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
     dest: ./resources/[framework]/rsg-appearance
@@ -159,27 +149,12 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-input
     ref: main
     dest: ./resources/[framework]/rsg-input
-        
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-lockpick
-    ref: main
-    dest: ./resources/[framework]/rsg-lockpick
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-menu
     ref: main
     dest: ./resources/[framework]/rsg-menu
 
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-policejob
-    ref: main
-    dest: ./resources/[framework]/rsg-policejob
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-scoreboard
-    ref: main
-    dest: ./resources/[framework]/rsg-scoreboard
-    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-spawn
     ref: main
@@ -194,12 +169,7 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-weapons
     ref: main
     dest: ./resources/[framework]/rsg-weapons
-      
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-doorlock
-    ref: main
-    dest: ./resources/[framework]/rsg-doorlock
-           
+    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-shops
     ref: main
@@ -215,146 +185,16 @@ tasks:
     ref: main
     dest: ./resources/[framework]/rsg-essentials
     
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-travel
-    ref: main
-    dest: ./resources/[framework]/rsg-travel
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-outlawpost
-    ref: main
-    dest: ./resources/[framework]/rsg-outlawpost
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fasttravel
-    ref: main
-    dest: ./resources/[framework]/rsg-fasttravel
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-pets
-    ref: main
-    dest: ./resources/[framework]/rsg-pets
-    
   - action: waste_time # prevent github throttling
     seconds: 10
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-storage
-    ref: main
-    dest: ./resources/[framework]/rsg-storage
-      
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-indiantobacco
-    ref: main
-    dest: ./resources/[framework]/rsg-indiantobacco
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-moonshiner
-    ref: main
-    dest: ./resources/[framework]/rsg-moonshiner
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-treasure
-    ref: main
-    dest: ./resources/[framework]/rsg-treasure
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-crafting
-    ref: main
-    dest: ./resources/[framework]/rsg-crafting
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-gatherer
-    ref: main
-    dest: ./resources/[framework]/rsg-gatherer
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-mining
-    ref: main
-    dest: ./resources/[framework]/rsg-mining
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
     ref: main
     dest: ./resources/[framework]/rsg-telegram
     
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-butcher
-    ref: main
-    dest: ./resources/[framework]/rsg-butcher
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-trapperplus
-    ref: main
-    dest: ./resources/[framework]/rsg-trapperplus
-        
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-looting
-    ref: main
-    dest: ./resources/[framework]/rsg-looting
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fishing
-    ref: main
-    dest: ./resources/[framework]/rsg-fishing
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-fishvendor
-    ref: main
-    dest: ./resources/[framework]/rsg-fishvendor
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-canoe
-    ref: main
-    dest: ./resources/[framework]/rsg-canoe
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-drinker
-    ref: main
-    dest: ./resources/[framework]/rsg-drinker
-    
   - action: waste_time # prevent github throttling
     seconds: 10
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-piano
-    ref: main
-    dest: ./resources/[framework]/rsg-piano
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-contraband
-    ref: main
-    dest: ./resources/[framework]/rsg-contraband
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-goldpanning
-    ref: main
-    dest: ./resources/[framework]/rsg-goldpanning
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-sellvendor
-    ref: main
-    dest: ./resources/[framework]/rsg-sellvendor
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-cooking
-    ref: main
-    dest: ./resources/[framework]/rsg-cooking
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-goldsmelt
-    ref: main
-    dest: ./resources/[framework]/rsg-goldsmelt
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-lawbadge
-    ref: main
-    dest: ./resources/[framework]/rsg-lawbadge
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-farmer
-    ref: main
-    dest: ./resources/[framework]/rsg-farmer
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-horses
@@ -367,131 +207,15 @@ tasks:
     dest: ./resources/[framework]/rsg-hud
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-weaponsmith
-    ref: main
-    dest: ./resources/[framework]/rsg-weaponsmith
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-saloontender
-    ref: main
-    dest: ./resources/[framework]/rsg-saloontender
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-menubase
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-menubase
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-prison
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-prison
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-wholesaletrader
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-wholesaletrader
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-npcs
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-npcs
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-jobwagon
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-jobwagon
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-horsetrainer
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-horsetrainer
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-billing
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-billing
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-wardrobe
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-wardrobe
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-metabolism
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-metabolism
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-barbers
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-barbers
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-bathing
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-bathing
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-hotel
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-hotel
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-boats
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-boats
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-houses
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-houses
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-townhall
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-townhall
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-notes
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-notes
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-delivery
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-delivery
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-canteen
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-canteen
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-wildhorse
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-wildhorse
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-vendor
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-vendor
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-railroadjob
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-railroadjob
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-playerinfo
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-playerinfo
-    
+
   # Download Rexshack MapMod resources
   
   - action: download_github
