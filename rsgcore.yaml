@@ -193,9 +193,6 @@ tasks:
     ref: main
     dest: ./resources/[framework]/rsg-telegram
     
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-horses
     ref: main
