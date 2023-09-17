@@ -145,7 +145,10 @@ CREATE TABLE IF NOT EXISTS `weapon_shop` (
 
 INSERT INTO `weapon_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valweaponshop', 'valweaponsmith', 'Valentine Weapon Shop', 0),
-('rhoweaponshop', 'rhoweaponsmith', 'Rhodes Weapon Shop', 0);
+('rhoweaponshop', 'rhoweaponsmith', 'Rhodes Weapon Shop', 0),
+('stdweaponshop', 'stdweaponsmith', 'Staint Denis Weapon Shop', 0),
+('tumweaponshop', 'tumweaponsmith', 'Tumbleweed Weapon Shop', 0),
+('annweaponshop', 'annweaponsmith', 'Annesburg Weapon Shop', 0);
 
 CREATE TABLE `weapon_stock` (
   `id` int(11) NOT NULL,
