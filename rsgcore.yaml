@@ -176,6 +176,11 @@ tasks:
     dest: ./resources/[framework]/rsg-weaponsmith
     
   - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-weaponshop
+    ref: main
+    dest: ./resources/[framework]/rsg-weaponshop
+    
+  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-shops
     ref: main
     dest: ./resources/[framework]/rsg-shops
