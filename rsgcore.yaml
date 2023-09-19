@@ -227,6 +227,11 @@ tasks:
     dest: ./resources/[framework]/rsg-playerinfo
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-playerinfo
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-bossmenu
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-bossmenu
 
   # Download Rexshack MapMod resources
   
