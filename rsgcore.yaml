@@ -232,6 +232,11 @@ tasks:
     dest: ./resources/[framework]/rsg-bossmenu
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-bossmenu
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-gangmenu
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-gangmenu
 
   # Download Rexshack MapMod resources
   
