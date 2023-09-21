@@ -150,6 +150,9 @@ tasks:
     ref: main
     dest: ./resources/[framework]/rsg-input
     
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-menu
     ref: main
@@ -195,13 +198,13 @@ tasks:
     ref: main
     dest: ./resources/[framework]/rsg-essentials
     
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
     ref: main
     dest: ./resources/[framework]/rsg-telegram
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-horses
@@ -237,8 +240,16 @@ tasks:
     dest: ./resources/[framework]/rsg-gangmenu
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-gangmenu
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-blacksmith
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-blacksmith
 
   # Download Rexshack MapMod resources
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
   
   - action: download_github
     src: https://github.com/Rexshack-RedM/map-mexico
