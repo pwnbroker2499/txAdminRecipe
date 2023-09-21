@@ -245,6 +245,11 @@ tasks:
     dest: ./resources/[framework]/rsg-billing
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-billing
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-hotel
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-hotel
 
   # Download Rexshack MapMod resources
 
