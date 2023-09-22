@@ -270,6 +270,11 @@ tasks:
     dest: ./resources/[framework]/rsg-hotel
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-hotel
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-cooking
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-cooking
 
   # Download Rexshack MapMod resources
 
