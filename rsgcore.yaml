@@ -149,6 +149,14 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-prison
     ref: main
     dest: ./resources/[framework]/rsg-prison
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-doorlock
+    ref: main
+    dest: ./resources/[framework]/rsg-doorlock
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-banking
@@ -159,9 +167,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-input
     ref: main
     dest: ./resources/[framework]/rsg-input
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-menu
@@ -203,13 +208,13 @@ tasks:
     ref: main
     dest: ./resources/[framework]/rsg-essentials
     
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
     ref: main
     dest: ./resources/[framework]/rsg-telegram
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-horses
