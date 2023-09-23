@@ -313,6 +313,11 @@ tasks:
     dest: ./resources/[framework]/rsg-townhall
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-townhall
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-saloontender
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-saloontender
 
   # Download Rexshack MapMod resources
 
