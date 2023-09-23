@@ -318,6 +318,11 @@ tasks:
     dest: ./resources/[framework]/rsg-saloontender
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-saloontender
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-travel
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-travel
 
   # Download Rexshack MapMod resources
 
