@@ -261,6 +261,9 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-blacksmith
     
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   - action: download_github
     dest: ./resources/[framework]/rsg-billing
     ref: main
@@ -275,6 +278,41 @@ tasks:
     dest: ./resources/[framework]/rsg-cooking
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-cooking
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-npcs
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-npcs
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-fishing
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-fishing
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-fishvendor
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-fishvendor
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-butcher
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-butcher
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-trapperplus
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-trapperplus
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-farmer
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-farmer
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-townhall
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-townhall
 
   # Download Rexshack MapMod resources
 
