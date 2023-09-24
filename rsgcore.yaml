@@ -314,6 +314,9 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-townhall
     
+  - action: waste_time # prevent github throttling
+    seconds: 10
+    
   - action: download_github
     dest: ./resources/[framework]/rsg-saloontender
     ref: main
@@ -323,11 +326,13 @@ tasks:
     dest: ./resources/[framework]/rsg-travel
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-travel
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-canteen
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-canteen
 
   # Download Rexshack MapMod resources
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
   
   - action: download_github
     src: https://github.com/Rexshack-RedM/map-mexico
