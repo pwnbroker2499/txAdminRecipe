@@ -351,6 +351,11 @@ tasks:
     dest: ./resources/[framework]/rsg-pets
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-pets
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-drinker
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-drinker
 
   # Download Rexshack MapMod resources
   
