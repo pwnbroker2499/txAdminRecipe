@@ -356,6 +356,11 @@ tasks:
     dest: ./resources/[framework]/rsg-drinker
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-drinker
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-wardrobe
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-wardrobe
 
   # Download Rexshack MapMod resources
   
