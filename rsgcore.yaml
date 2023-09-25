@@ -379,6 +379,11 @@ tasks:
     dest: ./resources/[framework]/rsg-mining
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-mining
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-treasure
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-treasure
 
   # Download Rexshack MapMod resources
   
