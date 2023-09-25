@@ -369,6 +369,11 @@ tasks:
     
   - action: waste_time # prevent github throttling
     seconds: 10
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-goldsmelt
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-goldsmelt
 
   # Download Rexshack MapMod resources
   
