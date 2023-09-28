@@ -389,6 +389,11 @@ tasks:
     dest: ./resources/[framework]/rsg-bathing
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-bathing
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-gangcamp
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-gangcamp
 
   # Download Rexshack MapMod resources
   
