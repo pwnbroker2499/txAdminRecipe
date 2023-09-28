@@ -394,6 +394,11 @@ tasks:
     dest: ./resources/[framework]/rsg-gangcamp
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-gangcamp
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-lockpick
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-lockpick
 
   # Download Rexshack MapMod resources
   
