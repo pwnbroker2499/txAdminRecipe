@@ -399,6 +399,11 @@ tasks:
     dest: ./resources/[framework]/rsg-lockpick
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-lockpick
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-beekeeper
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-beekeeper
 
   # Download Rexshack MapMod resources
   
