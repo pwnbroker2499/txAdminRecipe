@@ -404,6 +404,14 @@ tasks:
     dest: ./resources/[framework]/rsg-beekeeper
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-beekeeper
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-delivery
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-delivery
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   # Download Rexshack MapMod resources
   
