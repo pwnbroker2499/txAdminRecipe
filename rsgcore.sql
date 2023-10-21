@@ -225,7 +225,9 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('rhoweaponsmith', 0, 'boss'),
 ('stdweaponsmith', 0, 'boss'),
 ('tumweaponsmith', 0, 'boss'),
-('annweaponsmith', 0, 'boss');
+('annweaponsmith', 0, 'boss'),
+('macfarranch', 0, 'boss'),
+('prongranch', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `player_bills` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
