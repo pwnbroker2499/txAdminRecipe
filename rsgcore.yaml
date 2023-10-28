@@ -417,6 +417,11 @@ tasks:
     dest: ./resources/[framework]/rsg-houses
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-houses
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-adminmenu
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-adminmenu
 
   # Download Rexshack MapMod resources
   
