@@ -427,6 +427,11 @@ tasks:
     dest: ./resources/[framework]/rsg-ranch
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-ranch
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-wildhorse
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-wildhorse
 
   # Download Rexshack MapMod resources
   
