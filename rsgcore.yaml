@@ -362,18 +362,8 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-wardrobe
     
-  - action: download_github
-    dest: ./resources/[framework]/rsg-goldpanning
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-goldpanning
-    
   - action: waste_time # prevent github throttling
     seconds: 10
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-goldsmelt
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-goldsmelt
     
   - action: download_github
     dest: ./resources/[framework]/rsg-mining
