@@ -150,7 +150,7 @@ INSERT INTO `weapon_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('tumweaponshop', 'tumweaponsmith', 'Tumbleweed Weapon Shop', 0),
 ('annweaponshop', 'annweaponsmith', 'Annesburg Weapon Shop', 0);
 
-CREATE TABLE `weapon_stock` (
+CREATE TABLE IF NOT EXISTS `weapon_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
 INSERT INTO `blacksmith_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valblacksmithshop', 'valblacksmith', 'Valentine Blacksmith Shop', 0);
 
-CREATE TABLE `blacksmithshop_stock` (
+CREATE TABLE IF NOT EXISTS `blacksmithshop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `player_rooms` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `player_plants` (
+CREATE TABLE IF NOT EXISTS `player_plants` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(50) DEFAULT NULL,
   `properties` text NOT NULL,
@@ -285,7 +285,7 @@ INSERT INTO `saloontender_shop` (`shopid`, `jobaccess`, `displayname`, `money`) 
 ('armsaloonshop', 'armsaloontender', 'Armadillo Saloon', 0),
 ('tumsaloonshop', 'tumsaloontender', 'Tumbleweed Saloon', 0);
 
-CREATE TABLE `saloontendershop_stock` (
+CREATE TABLE IF NOT EXISTS `saloontendershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -302,7 +302,7 @@ CREATE TABLE IF NOT EXISTS `job_wagons` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `player_props` (
+CREATE TABLE IF NOT EXISTS `player_props` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(50) DEFAULT NULL,
   `gang` varchar(50) DEFAULT NULL,
@@ -337,7 +337,7 @@ INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VAL
 ('rhodesbeekeepershop', 'rhodesbeekeeper', 'Rhodes Beekeeper Shop', 0),
 ('braithbeekeepershop', 'braithbeekeeper', 'Braithwaite Beekeeper Shop', 0);
 
-CREATE TABLE `beekeepershop_stock` (
+CREATE TABLE IF NOT EXISTS `beekeepershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -414,7 +414,7 @@ CREATE TABLE IF NOT EXISTS `player_housekeys` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `doors` (
+CREATE TABLE IF NOT EXISTS `doors` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `doorid` varchar(11) NOT NULL DEFAULT '0',
   `doorstate` int(1) NOT NULL DEFAULT 1,
@@ -529,7 +529,7 @@ INSERT INTO `ranch_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('macfarranchshop', 'macfarranch', 'Macfarlan Ranch Shop', 0),
 ('prongranchshop', 'prongranch', 'Pronghorn Ranch Shop', 0);
 
-CREATE TABLE `ranch_shop_stock` (
+CREATE TABLE IF NOT EXISTS `ranch_shop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -537,3 +537,22 @@ CREATE TABLE `ranch_shop_stock` (
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `hunting_wagons` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `citizenid` varchar(50) DEFAULT NULL,
+    `plate` varchar(255) NOT NULL,
+    `huntingcamp` varchar(50) DEFAULT NULL,
+    `active` tinyint(4) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `hunting_inventory` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `animalhash` int(25) DEFAULT NULL,
+    `animallabel` varchar(50) DEFAULT NULL,
+    `animallooted` int(11) DEFAULT NULL,
+    `citizenid` varchar(50) DEFAULT NULL,
+    `plate` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
