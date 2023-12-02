@@ -237,11 +237,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-menubase
 
   - action: download_github
-    dest: ./resources/[framework]/rsg-metabolism
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-metabolism
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-playerinfo
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-playerinfo
