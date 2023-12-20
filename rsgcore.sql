@@ -200,6 +200,11 @@ KEY `type` (`type`)
 
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
+('vallaw', 0, 'boss'),
+('rholaw', 0, 'boss'),
+('blklaw', 0, 'boss'),
+('strlaw', 0, 'boss'),
+('stdenlaw', 0, 'boss'),
 ('medic', 0, 'boss'),
 ('valsaloontender', 0, 'boss'),
 ('blasaloontender', 0, 'boss'),
@@ -226,9 +231,7 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('rhoweaponsmith', 0, 'boss'),
 ('stdweaponsmith', 0, 'boss'),
 ('tumweaponsmith', 0, 'boss'),
-('annweaponsmith', 0, 'boss'),
-('macfarranch', 0, 'boss'),
-('prongranch', 0, 'boss');
+('annweaponsmith', 0, 'boss');
 
 CREATE TABLE IF NOT EXISTS `player_bills` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
