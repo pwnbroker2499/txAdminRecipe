@@ -141,9 +141,9 @@ tasks:
     dest: ./resources/[framework]/rsg-medic
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-policejob
+    src: https://github.com/Rexshack-RedM/rsg-lawman
     ref: main
-    dest: ./resources/[framework]/rsg-policejob
+    dest: ./resources/[framework]/rsg-lawman
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-prison
