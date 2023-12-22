@@ -75,6 +75,9 @@ CREATE TABLE IF NOT EXISTS `stashitems` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+INSERT INTO `stashitems` (`stash`, `items`) VALUES
+('lawtrashcan', '[]');
+
 CREATE TABLE IF NOT EXISTS `telegrams` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(255) NOT NULL,
