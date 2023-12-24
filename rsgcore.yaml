@@ -381,6 +381,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-gangcamp
     
   - action: download_github
+    dest: ./resources/[framework]/rsg-camping
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-camping
+    
+  - action: download_github
     dest: ./resources/[framework]/rsg-lockpick
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-lockpick
