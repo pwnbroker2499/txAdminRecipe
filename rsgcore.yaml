@@ -48,7 +48,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/connectqueue
     ref: main
-    src: https://github.com/QRCore-RedM-Re/connectqueue
+    src: https://github.com/Rexshack-RedM/connectqueue
  
   - action: download_github
     dest: ./resources/[standalone]/progressbar
