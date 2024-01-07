@@ -391,11 +391,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-lockpick
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-beekeeper
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-beekeeper
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-delivery
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-delivery
