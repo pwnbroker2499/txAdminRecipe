@@ -309,17 +309,6 @@ CREATE TABLE IF NOT EXISTS `job_wagons` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE IF NOT EXISTS `player_props` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `citizenid` varchar(50) DEFAULT NULL,
-  `gang` varchar(50) DEFAULT NULL,
-  `properties` text NOT NULL,
-  `propid` int(11) NOT NULL,
-  `proptype` varchar(50) DEFAULT NULL,
-  `credit` int(11) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `beekeeper` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
@@ -540,13 +529,3 @@ INSERT INTO `treasure` (`id`, `name`, `looted`) VALUES
 (2, 'treasure2', 0),
 (3, 'treasure3', 0),
 (4, 'treasure4', 0);
-
-CREATE TABLE `player_campsite` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `citizenid` varchar(50) DEFAULT NULL,
-  `properties` text NOT NULL,
-  `propid` int(11) NOT NULL,
-  `proptype` varchar(50) DEFAULT NULL,
-  `credit` int(11) NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
