@@ -331,11 +331,6 @@ tasks:
     seconds: 10
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-treasure
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-treasure
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-bathing
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-bathing
