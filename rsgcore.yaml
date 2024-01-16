@@ -290,11 +290,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-fishvendor
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-butcher
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-butcher
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-trapperplus
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-trapperplus
