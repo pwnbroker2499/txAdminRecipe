@@ -316,12 +316,7 @@ tasks:
     dest: ./resources/[framework]/rsg-jobwagon
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-jobwagon
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-pets
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-pets
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-drinker
     ref: main
