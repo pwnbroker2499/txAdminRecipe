@@ -277,11 +277,6 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-barbers
 
-  - action: download_github
-    dest: ./resources/[framework]/rsg-drinker
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-drinker
-    
   - action: waste_time # prevent github throttling
     seconds: 10
     
