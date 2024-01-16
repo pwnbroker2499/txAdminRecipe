@@ -287,11 +287,6 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-drinker
     
-  - action: download_github
-    dest: ./resources/[framework]/rsg-wardrobe
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-wardrobe
-    
   - action: waste_time # prevent github throttling
     seconds: 10
     
