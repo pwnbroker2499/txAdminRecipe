@@ -300,11 +300,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-trapperplus
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-farmer
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-farmer
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-townhall
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-townhall
