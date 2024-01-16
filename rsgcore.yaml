@@ -324,12 +324,7 @@ tasks:
     src: https://github.com/Rexshack-RedM/map-mexico
     ref: main
     dest: ./resources/[mapmods]/map-mexico
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/map-moonshineshacks
-    ref: main
-    dest: ./resources/[mapmods]/map-moonshineshacks
-    
+     
   - action: download_github
     src: https://github.com/Rexshack-RedM/redm-ipls
     ref: main
