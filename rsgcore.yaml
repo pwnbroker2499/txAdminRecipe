@@ -134,6 +134,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-clothes
     ref: main
     dest: ./resources/[framework]/rsg-clothes
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-wardrobe
+    ref: main
+    dest: ./resources/[framework]/rsg-wardrobe
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-medic
