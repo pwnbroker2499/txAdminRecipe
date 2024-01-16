@@ -288,11 +288,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-saloontender
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-travel
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-travel
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-canteen
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-canteen
