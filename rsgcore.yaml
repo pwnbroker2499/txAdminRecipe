@@ -259,9 +259,6 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-fishing
     
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[framework]/rsg-canteen
     ref: main
@@ -272,9 +269,6 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-barbers
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
   - action: download_github
     dest: ./resources/[framework]/rsg-bathing
     ref: main
@@ -284,15 +278,7 @@ tasks:
     dest: ./resources/[framework]/rsg-lockpick
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-lockpick
-        
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-houses
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-houses
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-adminmenu
     ref: main
