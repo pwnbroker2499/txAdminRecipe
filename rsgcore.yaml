@@ -281,12 +281,7 @@ tasks:
     
   - action: waste_time # prevent github throttling
     seconds: 10
-    
-  - action: download_github
-    dest: ./resources/[framework]/rsg-saloontender
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-saloontender
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-canteen
     ref: main
