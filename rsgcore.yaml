@@ -270,11 +270,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-hotel
     
   - action: download_github
-    dest: ./resources/[framework]/rsg-cooking
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-cooking
-    
-  - action: download_github
     dest: ./resources/[framework]/rsg-npcs
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-npcs
