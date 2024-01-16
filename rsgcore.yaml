@@ -217,11 +217,6 @@ tasks:
     dest: ./resources/[framework]/rsg-horses
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-horsetrainer
-    ref: main
-    dest: ./resources/[framework]/rsg-horsetrainer
-    
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-hud
     ref: main
     dest: ./resources/[framework]/rsg-hud
