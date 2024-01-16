@@ -246,11 +246,6 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-gangmenu
     
-  - action: download_github
-    dest: ./resources/[framework]/rsg-blacksmith
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-blacksmith
-    
   - action: waste_time # prevent github throttling
     seconds: 10
       
