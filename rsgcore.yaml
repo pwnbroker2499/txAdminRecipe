@@ -327,12 +327,7 @@ tasks:
     dest: ./resources/[framework]/rsg-adminmenu
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-adminmenu
-        
-  - action: download_github
-    dest: ./resources/[framework]/rsg-hunting
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-hunting
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-trains
     ref: main
