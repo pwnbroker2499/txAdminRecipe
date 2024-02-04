@@ -131,11 +131,6 @@ tasks:
     dest: ./resources/[framework]/rsg-pvp
     
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-clothes
-    ref: main
-    dest: ./resources/[framework]/rsg-clothes
-    
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-wardrobe
     ref: main
     dest: ./resources/[framework]/rsg-wardrobe
