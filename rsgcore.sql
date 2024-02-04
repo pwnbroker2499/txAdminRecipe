@@ -34,26 +34,21 @@ CREATE TABLE IF NOT EXISTS `players` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `playerskins` (
-  `citizenid` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `license` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `skin` varchar(8000) CHARACTER SET utf8 NOT NULL,
-  KEY `citizenid` (`citizenid`)
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `citizenid` VARCHAR(255) NOT NULL COLLATE 'utf8mb3_general_ci',
+  `skin` VARCHAR(8000) NOT NULL COLLATE 'utf8mb3_general_ci',
+  `clothes` VARCHAR(8000) NOT NULL COLLATE 'utf8mb4_general_ci',
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `citizenid` (`citizenid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE IF NOT EXISTS `playerclothe` (
-  `citizenid` varchar(255) NOT NULL,
-  `license` varchar(255) NOT NULL,
-  `clothes` varchar(5000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 CREATE TABLE IF NOT EXISTS `playeroutfit` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `citizenid` varchar(50) NOT NULL,
-  `license` varchar(255) CHARACTER SET utf8mb4 NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `clothes` longtext DEFAULT NULL,
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `citizenid` VARCHAR(50) NOT NULL COLLATE 'utf8mb3_general_ci',
+  `name` VARCHAR(255) NOT NULL COLLATE 'utf8mb3_general_ci',
+  `clothes` LONGTEXT NULL DEFAULT NULL COLLATE 'utf8mb3_general_ci',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `stashitems` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
