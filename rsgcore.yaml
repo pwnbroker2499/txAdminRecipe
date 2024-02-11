@@ -162,11 +162,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-banking
     ref: main
     dest: ./resources/[framework]/rsg-banking
-    
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-menu
-    ref: main
-    dest: ./resources/[framework]/rsg-menu
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-spawn
