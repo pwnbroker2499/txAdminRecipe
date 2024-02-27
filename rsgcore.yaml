@@ -177,6 +177,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-weapons
     ref: main
     dest: ./resources/[framework]/rsg-weapons
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-ammo
+    ref: main
+    dest: ./resources/[framework]/rsg-ammo
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-shops
