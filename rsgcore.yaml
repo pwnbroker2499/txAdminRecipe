@@ -54,6 +54,11 @@ tasks:
     dest: ./resources/[standalone]/progressbar
     ref: main
     src: https://github.com/Rexshack-RedM/progressbar
+
+  - action: download_github
+    dest: ./resources/[standalone]/safecracker
+    ref: main
+    src: https://github.com/QRCore-RedM-Re/safecracker
     
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
@@ -101,7 +106,7 @@ tasks:
     src: https://github.com/RexShack/rNotify
         
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 30
 
   # Download RSGCore resources
   
@@ -121,6 +126,11 @@ tasks:
     dest: ./resources/[framework]/rsg-multicharacter
 
   - action: download_github
+    src: https://github.com/RP-Redm/rsg-management
+    ref: main
+    dest: ./resources/[framework]/rsg-management
+
+  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
     dest: ./resources/[framework]/rsg-appearance
@@ -129,6 +139,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-pvp
     ref: main
     dest: ./resources/[framework]/rsg-pvp
+
+ - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-clothes
+    ref: main
+    dest: ./resources/[framework]/rsg-clothes     
     
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-wardrobe
@@ -164,6 +179,11 @@ tasks:
     dest: ./resources/[framework]/rsg-banking
 
   - action: download_github
+    src: https://github.com/RP-Redm/rsg-input
+    ref: main
+    dest: ./resources/[framework]/rsg-input  
+
+  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-spawn
     ref: main
     dest: ./resources/[framework]/rsg-spawn
@@ -197,10 +217,25 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-essentials
     ref: main
     dest: ./resources/[framework]/rsg-essentials
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-travel
+    ref: main
+    dest: ./resources/[framework]/rsg-travel  
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-outlawpost
+    ref: main
+    dest: ./resources/[framework]/rsg-outlawpost  
     
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 30
     
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-fasttravel
+    ref: main
+    dest: ./resources/[framework]/rsg-fasttravel
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
     ref: main
@@ -215,11 +250,36 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-hud
     ref: main
     dest: ./resources/[framework]/rsg-hud
-    
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-storage
+    ref: main
+    dest: ./resources/[framework]/rsg-storage
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-indiantobacco
+    ref: main
+    dest: ./resources/[framework]/rsg-indiantobacco
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-moonshiner
+    ref: main
+    dest: ./resources/[framework]/rsg-moonshiner
+        
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-storerobbery
+    ref: main
+    dest: ./resources/[framework]/rsg-storerobbery
+  
   - action: download_github
     dest: ./resources/[framework]/rsg-menubase
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-menubase
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-treasure
+    ref: main
+    dest: ./resources/[framework]/rsg-treasure  
 
   - action: download_github
     dest: ./resources/[framework]/rsg-playerinfo
@@ -237,8 +297,28 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-gangmenu
     
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 30
 
+  - action: download_github
+    src: https://github.com/Rexshack-Scripts/rsg-townhall
+    ref: main
+    dest: ./resources/[framework]/rsg-townhall
+
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-witchdoctor
+    ref: main
+    dest: ./resources/[framework]/rsg-witchdooctor
+
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-npcdoc
+    ref: main
+    dest: ./resources/[framework]/rsg-npcdoc   
+  
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-pets
+    ref: main
+    dest: ./resources/[framework]/rsg-pets
+  
   - action: download_github
     dest: ./resources/[framework]/rsg-npcs
     ref: main
@@ -274,6 +354,45 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-adminmenu
 
+  - action: download_github
+    dest: ./resources/[framework]/rsg-cinema
+    ref: main
+    src: https://github.com/Andyauk/rsg-cinema 
+
+  - action: waste_time # prevent github throttling
+    seconds: 30
+
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-hanging/
+    ref: main
+    dest: ./resources/[framework]/rsg-hanging 
+
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-herbs/
+    ref: main
+    dest: ./resources/[framework]/rsg-herbs
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-looting
+    ref: main
+    dest: ./resources/[framework]/rsg-looting
+    
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-delivery
+    ref: main
+    dest: ./resources/[framework]/rsg-delivery
+
+  - action: download_github
+    src: https://github.com/RP-Redm/rsg-contraband
+    ref: main
+    dest: ./resources/[framework]/rsg-contraband
+
+  - action: download_github
+    src: https://github.com/pwnbroker2499/rsg_casinovaultheist
+    ref: main
+    dest: ./resources/[conversions]/rsg_casinovaultheist 
+
+
   # Download Rexshack MapMod resources
 
   - action: download_github
@@ -285,6 +404,11 @@ tasks:
     src: https://github.com/Rexshack-RedM/redm-ymaps
     ref: main
     dest: ./resources/[mapmods]/redm-ymaps
+
+  - action: download_github
+    src: https://github.com/Andyauk/rsg-interiors
+    ref: main
+    dest: ./resources/[mapmods]/rsg-interiors 
 
   # Remove Old Chat
   - action: remove_path
