@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
 CREATE TABLE IF NOT EXISTS `stashitems` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `stash` varchar(255) NOT NULL DEFAULT '[]',
-  `items` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `items` longtext DEFAULT NULL,
   PRIMARY KEY (`stash`),
   KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
