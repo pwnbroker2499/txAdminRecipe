@@ -128,13 +128,13 @@ UNIQUE KEY `job_name` (`job_name`),
 KEY `type` (`type`)
 );
 
-INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
-('vallaw', 0, 'boss'),
-('rholaw', 0, 'boss'),
-('blklaw', 0, 'boss'),
-('strlaw', 0, 'boss'),
-('stdenlaw', 0, 'boss'),
-('medic', 0, 'boss');
+ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
+ ('vallaw', 0, 'boss'),
+ ('rholaw', 0, 'boss'),
+ ('blklaw', 0, 'boss'),
+ ('strlaw', 0, 'boss'),
+ ('stdenlaw', 0, 'boss'),
+-- ('medic', 0, 'boss');
 
 DROP TABLE IF EXISTS `beekeeper_stock`;
 CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
