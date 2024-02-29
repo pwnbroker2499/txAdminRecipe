@@ -171,7 +171,7 @@ tasks:
     dest: ./resources/[framework]/rsg-doorlock
     
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 30
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-banking
