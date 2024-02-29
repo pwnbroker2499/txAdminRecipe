@@ -126,11 +126,6 @@ tasks:
     dest: ./resources/[framework]/rsg-multicharacter
 
   - action: download_github
-    src: https://github.com/RP-Redm/rsg-management
-    ref: main
-    dest: ./resources/[framework]/rsg-management
-
-  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
     dest: ./resources/[framework]/rsg-appearance
