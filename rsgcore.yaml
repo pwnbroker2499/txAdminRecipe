@@ -1,8 +1,8 @@
 $engine: 3
 $onesync: on
-name: Rexshack RedM Build
+name: PwnBroker's Rexshack RedM Build
 version: 1.0.0
-author: Rexshack Gaming
+author: Pwnbroker2499
 description: RSG RedM Server Build
 
 tasks:
