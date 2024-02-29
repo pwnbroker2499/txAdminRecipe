@@ -8,7 +8,7 @@ description: RSG RedM Server Build
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/Rexshack-RedM/txAdminRecipe
+    src: https://github.com/pwnbroker2499/txAdminRecipe
     ref: main
     dest: ./tmp/RSGCore
 
