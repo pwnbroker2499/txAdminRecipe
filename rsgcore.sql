@@ -138,15 +138,15 @@ KEY `type` (`type`)
 
 CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `beekeeper` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `beekeeper` varchar(50) DEFAULT NULL,
+  `item` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
   `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(255) DEFAULT NULL,
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
@@ -162,8 +162,8 @@ INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VAL
 
 CREATE TABLE `beekeepershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `shopid` varchar(50) DEFAULT NULL,
+  `items` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
@@ -230,15 +230,15 @@ CREATE TABLE `player_props` (
 
 CREATE TABLE IF NOT EXISTS `saloontender_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `saloontender` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `saloontender` varchar(50) DEFAULT NULL,
+  `item` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `saloontender_shop` (
   `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(255) DEFAULT NULL,
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
@@ -256,8 +256,8 @@ INSERT INTO `saloontender_shop` (`shopid`, `jobaccess`, `displayname`, `money`) 
 
 CREATE TABLE `saloontendershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `shopid` varchar(50) DEFAULT NULL,
+  `items` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
@@ -298,15 +298,15 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 
 CREATE TABLE IF NOT EXISTS `blacksmith_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `blacksmith` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `blacksmith` varchar(50) DEFAULT NULL,
+  `item` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
   `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(255) DEFAULT NULL,
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
@@ -317,8 +317,8 @@ INSERT INTO `blacksmith_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VA
 
 CREATE TABLE `blacksmithshop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `shopid` varchar(50) DEFAULT NULL,
+  `items` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
@@ -588,8 +588,8 @@ INSERT INTO `player_weapons` (`id`, `serial`, `citizenid`, `components`) VALUES
 DROP TABLE IF EXISTS `weaponsmith_stock`;
 CREATE TABLE IF NOT EXISTS `weaponsmith_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `weaponsmith` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `weaponsmith` varchar(50) DEFAULT NULL,
+  `item` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -597,7 +597,7 @@ CREATE TABLE IF NOT EXISTS `weaponsmith_stock` (
 DROP TABLE IF EXISTS `weapon_shop`;
 CREATE TABLE IF NOT EXISTS `weapon_shop` (
   `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(255) DEFAULT NULL,
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
@@ -613,8 +613,8 @@ INSERT INTO `weapon_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 DROP TABLE IF EXISTS `weapon_stock`;
 CREATE TABLE `weapon_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `shopid` varchar(50) DEFAULT NULL,
+  `items` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
@@ -634,8 +634,8 @@ CREATE TABLE IF NOT EXISTS `player_rooms` (
 DROP TABLE IF EXISTS `ranch_animals`;
 CREATE TABLE IF NOT EXISTS `ranch_animals` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `ranchid` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-    `animalid` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
+    `ranchid` varchar(50) DEFAULT NULL,
+    `animalid` varchar(50) DEFAULT NULL,
     `animals` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -643,8 +643,8 @@ CREATE TABLE IF NOT EXISTS `ranch_animals` (
 DROP TABLE IF EXISTS `ranch_stock`;
 CREATE TABLE IF NOT EXISTS `ranch_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `jobaccess` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(50) DEFAULT NULL,
+  `item` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -652,7 +652,7 @@ CREATE TABLE IF NOT EXISTS `ranch_stock` (
 DROP TABLE IF EXISTS `ranch_shop`;
 CREATE TABLE IF NOT EXISTS `ranch_shop` (
   `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `jobaccess` varchar(255) DEFAULT NULL,
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
@@ -664,8 +664,8 @@ INSERT INTO `ranch_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 DROP TABLE IF EXISTS `ranch_shop_stock`;
 CREATE TABLE `ranch_shop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `shopid` varchar(50) DEFAULT NULL,
+  `items` varchar(50) DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
