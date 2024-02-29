@@ -136,7 +136,6 @@ KEY `type` (`type`)
  ('stdenlaw', 0, 'boss'),
 -- ('medic', 0, 'boss');
 
-DROP TABLE IF EXISTS `beekeeper_stock`;
 CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `beekeeper` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
@@ -145,7 +144,6 @@ CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `beekeeper_shop`;
 CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
   `shopid` varchar(255) NOT NULL,
   `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -162,7 +160,6 @@ INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VAL
 ('rhodesbeekeepershop', 'rhodesbeekeeper', 'Rhodes Beekeeper Shop', 0),
 ('braithbeekeepershop', 'braithbeekeeper', 'Braithwaite Beekeeper Shop', 0);
 
-DROP TABLE IF EXISTS `beekeepershop_stock`;
 CREATE TABLE `beekeepershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -183,26 +180,11 @@ CREATE TABLE IF NOT EXISTS `player_bills` (
   KEY `citizenid` (`citizenid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
-
-
 CREATE TABLE `clothes` (
   `citizenid` varchar(255) NOT NULL,
   `license` varchar(255) NOT NULL,
   `clothes` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 CREATE TABLE `playeroutfit` (
   `citizenid` varchar(255) NOT NULL,
@@ -210,11 +192,6 @@ CREATE TABLE `playeroutfit` (
   `name` varchar(255) NOT NULL,
   `clothes` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 CREATE TABLE `indian_plants` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -251,7 +228,6 @@ CREATE TABLE `player_props` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `saloontender_stock`;
 CREATE TABLE IF NOT EXISTS `saloontender_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `saloontender` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
@@ -260,7 +236,6 @@ CREATE TABLE IF NOT EXISTS `saloontender_stock` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `saloontender_shop`;
 CREATE TABLE IF NOT EXISTS `saloontender_shop` (
   `shopid` varchar(255) NOT NULL,
   `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -279,7 +254,6 @@ INSERT INTO `saloontender_shop` (`shopid`, `jobaccess`, `displayname`, `money`) 
 ('armsaloonshop', 'armsaloontender', 'Armadillo Saloon', 0),
 ('tumsaloonshop', 'tumsaloontender', 'Tumbleweed Saloon', 0);
 
-DROP TABLE IF EXISTS `saloontendershop_stock`;
 CREATE TABLE `saloontendershop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -288,16 +262,6 @@ CREATE TABLE `saloontendershop_stock` (
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `management_funds` (
-`id` INT(11) NOT NULL AUTO_INCREMENT,
-`job_name` VARCHAR(50) NOT NULL,
-`amount`  INT(100) NOT NULL,
-`type` ENUM('boss','gang') NOT NULL DEFAULT 'boss',
-PRIMARY KEY (`id`),
-UNIQUE KEY `job_name` (`job_name`),
-KEY `type` (`type`)
-);
 
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
@@ -329,20 +293,9 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('tumweaponsmith', 0, 'boss'),
 ('annweaponsmith', 0, 'boss');
 
-CREATE TABLE IF NOT EXISTS `management_funds` (
-`id` INT(11) NOT NULL AUTO_INCREMENT,
-`job_name` VARCHAR(50) NOT NULL,
-`amount`  INT(100) NOT NULL,
-`type` ENUM('boss','gang') NOT NULL DEFAULT 'boss',
-PRIMARY KEY (`id`),
-UNIQUE KEY `job_name` (`job_name`),
-KEY `type` (`type`)
-);
-
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('gang1', 0, 'gang');
 
-DROP TABLE IF EXISTS `blacksmith_stock`;
 CREATE TABLE IF NOT EXISTS `blacksmith_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `blacksmith` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
@@ -351,7 +304,6 @@ CREATE TABLE IF NOT EXISTS `blacksmith_stock` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `blacksmith_shop`;
 CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
   `shopid` varchar(255) NOT NULL,
   `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -363,7 +315,6 @@ CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
 INSERT INTO `blacksmith_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valblacksmithshop', 'valblacksmith', 'Valentine Blacksmith Shop', 0);
 
-DROP TABLE IF EXISTS `blacksmithshop_stock`;
 CREATE TABLE `blacksmithshop_stock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
@@ -619,42 +570,6 @@ CREATE TABLE IF NOT EXISTS `address_book` (
   `owner`  VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-DROP TABLE IF EXISTS `beekeeper_stock`;
-CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `beekeeper` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `stock` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-DROP TABLE IF EXISTS `beekeeper_shop`;
-CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
-  `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `displayname` varchar(255) NOT NULL,
-  `money` double(11,2) NOT NULL DEFAULT 0.00,
-  PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
-('valbeekeepershop', 'valbeekeeper', 'Valentine Beekeeper Shop', 0),
-('strawbeekeepershop', 'strawbeekeeper', 'Strawberry Beekeeper Shop', 0),
-('blackbeekeepershop', 'blackbeekeeper', 'Blackwater Beekeeper Shop', 0),
-('mcfarbeekeepershop', 'mcfarbeekeeper', 'Mcfarlanes Beekeeper Shop', 0),
-('rhodesbeekeepershop', 'rhodesbeekeeper', 'Rhodes Beekeeper Shop', 0),
-('braithbeekeepershop', 'braithbeekeeper', 'Braithwaite Beekeeper Shop', 0);
-
-DROP TABLE IF EXISTS `beekeepershop_stock`;
-CREATE TABLE `beekeepershop_stock` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `stock` int(11) NOT NULL DEFAULT 0,
-  `price` double(11,2) NOT NULL DEFAULT 0.00,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `player_weapons`
 (
