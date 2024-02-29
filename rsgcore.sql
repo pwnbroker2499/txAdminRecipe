@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
   `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
   `shopid` varchar(255) NOT NULL,
@@ -150,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valbeekeepershop', 'valbeekeeper', 'Valentine Beekeeper Shop', 0),
@@ -167,7 +167,7 @@ CREATE TABLE `beekeepershop_stock` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `player_bills` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `player_bills` (
   `sendercitizenid` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `clothes` (
   `citizenid` varchar(255) NOT NULL,
@@ -234,7 +234,7 @@ CREATE TABLE IF NOT EXISTS `saloontender_stock` (
   `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `saloontender_shop` (
   `shopid` varchar(255) NOT NULL,
@@ -242,7 +242,7 @@ CREATE TABLE IF NOT EXISTS `saloontender_shop` (
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `saloontender_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valsaloonshop', 'valsaloontender', 'Valentine Saloon', 0),
@@ -261,7 +261,7 @@ CREATE TABLE `saloontendershop_stock` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
@@ -302,7 +302,7 @@ CREATE TABLE IF NOT EXISTS `blacksmith_stock` (
   `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
   `shopid` varchar(255) NOT NULL,
@@ -310,7 +310,7 @@ CREATE TABLE IF NOT EXISTS `blacksmith_shop` (
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `blacksmith_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valblacksmithshop', 'valblacksmith', 'Valentine Blacksmith Shop', 0);
@@ -322,7 +322,7 @@ CREATE TABLE `blacksmithshop_stock` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `market_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -592,7 +592,7 @@ CREATE TABLE IF NOT EXISTS `weaponsmith_stock` (
   `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `weapon_shop`;
 CREATE TABLE IF NOT EXISTS `weapon_shop` (
@@ -601,7 +601,7 @@ CREATE TABLE IF NOT EXISTS `weapon_shop` (
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `weapon_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('valweaponshop', 'valweaponsmith', 'Valentine Weapon Shop', 0),
@@ -618,7 +618,7 @@ CREATE TABLE `weapon_stock` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `player_rooms` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -638,7 +638,7 @@ CREATE TABLE IF NOT EXISTS `ranch_animals` (
     `animalid` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
     `animals` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `ranch_stock`;
 CREATE TABLE IF NOT EXISTS `ranch_stock` (
@@ -647,7 +647,7 @@ CREATE TABLE IF NOT EXISTS `ranch_stock` (
   `item` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `stock` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `ranch_shop`;
 CREATE TABLE IF NOT EXISTS `ranch_shop` (
@@ -656,7 +656,7 @@ CREATE TABLE IF NOT EXISTS `ranch_shop` (
   `displayname` varchar(255) NOT NULL,
   `money` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`shopid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `ranch_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
 ('macfarranchshop', 'macfarranch', 'Macfarlan Ranch Shop', 0);
@@ -669,7 +669,7 @@ CREATE TABLE `ranch_shop_stock` (
   `stock` int(11) NOT NULL DEFAULT 0,
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `moonshiner_props` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
