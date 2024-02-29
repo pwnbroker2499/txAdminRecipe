@@ -133,7 +133,7 @@ KEY `type` (`type`)
  ('rholaw', 0, 'boss'),
  ('blklaw', 0, 'boss'),
  ('strlaw', 0, 'boss'),
- ('stdenlaw', 0, 'boss'),
+ ('stdenlaw', 0, 'boss');
 -- ('medic', 0, 'boss');
 
 DROP TABLE IF EXISTS `beekeeper_stock`;
