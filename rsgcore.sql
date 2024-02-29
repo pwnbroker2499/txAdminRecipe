@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
   INDEX `citizenid` (`citizenid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+DROP TABLE IF EXISTS `stashitems`;
 CREATE TABLE IF NOT EXISTS `stashitems` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `stash` varchar(255) NOT NULL DEFAULT '[]',
@@ -111,6 +112,10 @@ CREATE TABLE IF NOT EXISTS `player_weapons` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Sample Data
+INSERT INTO `player_weapons` (`id`, `serial`, `citizenid`, `components`) VALUES
+(1, 'BM123456', '666', '[{\"label\":\"Medium Scope\",\"comp\":\"comp\",\"name\":-1844750633,\"type\":\"scope\",\"model\":2044211697},{\"label\":\"Improved Rifling\",\"comp\":\"comp\",\"name\":488786388,\"type\":\"rifling\",\"model\":0},{\"label\":\"Wrap\",\"comp\":\"comp\",\"name\":1419411400,\"type\":\"wrap\",\"model\":890000845},{\"label\":\"Gold\",\"model\":0,\"name\":681399557,\"comp\":\"barrel\"},{\"label\":\"Gold\",\"model\":0,\"name\":-1217972306,\"comp\":\"trigger\"},{\"label\":\"Gold\",\"model\":0,\"name\":-1217972306,\"comp\":\"trigger\"},{\"label\":\"Gold\",\"model\":0,\"name\":1906948138,\"comp\":\"frame\"},{\"label\":\"Gold\",\"model\":0,\"name\":-897983242,\"comp\":\"cylinder\"},{\"label\":\"Gold\",\"model\":0,\"name\":-897983242,\"comp\":\"cylinder\"},{\"label\":\"Bounty Hunter Grain\",\"model\":680020185,\"name\":1043980328,\"comp\":\"gripbody\"},{\"label\":\"Flying Eagle\",\"model\":0,\"name\":2110982730,\"comp\":\"grip\"},{\"label\":\"Art Nouveau\",\"comp\":\"decal\",\"name\":1338763465,\"type\":\"frame\",\"model\":0},{\"label\":\"Art Nouveau\",\"comp\":\"decal\",\"name\":-1719565838,\"type\":\"barrel\",\"model\":0},{\"label\":\"Blued Steel\",\"comp\":\"decalcolor\",\"name\":-1822969329,\"type\":\"frame\",\"model\":0},{\"label\":\"Blued Steel\",\"comp\":\"decalcolor\",\"name\":1585980544,\"type\":\"barrel\",\"model\":0},{\"label\":\"Gold\",\"model\":0,\"name\":-1021999895,\"comp\":\"scope\"},{\"label\":\"White\",\"model\":0,\"name\":1170373926,\"comp\":\"wrapcolor\"}]');
+
 CREATE TABLE IF NOT EXISTS `address_book` (
 `id` INT(11) NOT NULL AUTO_INCREMENT,
 `citizenid` VARCHAR(50) NOT NULL,
@@ -118,6 +123,7 @@ CREATE TABLE IF NOT EXISTS `address_book` (
 `owner`  VARCHAR(50) NOT NULL,
 PRIMARY KEY (`id`));
 
+DROP TABLE IF EXISTS `management_funds`;
 CREATE TABLE IF NOT EXISTS `management_funds` (
 `id` INT(11) NOT NULL AUTO_INCREMENT,
 `job_name` VARCHAR(50) NOT NULL,
@@ -133,8 +139,35 @@ KEY `type` (`type`)
  ('rholaw', 0, 'boss'),
  ('blklaw', 0, 'boss'),
  ('strlaw', 0, 'boss'),
- ('stdenlaw', 0, 'boss');
--- ('medic', 0, 'boss');
+ ('stdenlaw', 0, 'boss'),
+ ('medic', 0, 'boss'),
+ ('valsaloontender', 0, 'boss'),
+ ('blasaloontender', 0, 'boss'),
+ ('rhosaloontender', 0, 'boss'),
+ ('stdenissaloontender1', 0, 'boss'),
+ ('stdenissaloontender2', 0, 'boss'),
+ ('vansaloontender', 0, 'boss'),
+ ('armsaloontender', 0, 'boss'),
+ ('tumsaloontender', 0, 'boss'),
+ ('moonsaloontender1', 0, 'boss'),
+ ('moonsaloontender2', 0, 'boss'),
+ ('moonsaloontender3', 0, 'boss'),
+ ('moonsaloontender4', 0, 'boss'),
+ ('moonsaloontender5', 0, 'boss'),
+ ('stdeniswholesale', 0, 'boss'),
+ ('blkwholesale', 0, 'boss'),
+ ('railroad', 0, 'boss'),
+ ('govenor1', 0, 'boss'),
+ ('govenor2', 0, 'boss'),
+ ('govenor3', 0, 'boss'),
+ ('govenor4', 0, 'boss'),
+ ('govenor5', 0, 'boss'),
+ ('valweaponsmith', 0, 'boss'),
+ ('rhoweaponsmith', 0, 'boss'),
+ ('stdweaponsmith', 0, 'boss'),
+ ('tumweaponsmith', 0, 'boss'),
+ ('annweaponsmith', 0, 'boss'),
+ ('gang1', 0, 'gang');
 
 DROP TABLE IF EXISTS `beekeeper_stock`;
 CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
@@ -268,59 +301,6 @@ CREATE TABLE `saloontendershop_stock` (
   `price` double(11,2) NOT NULL DEFAULT 0.00,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE IF NOT EXISTS `management_funds` (
-`id` INT(11) NOT NULL AUTO_INCREMENT,
-`job_name` VARCHAR(50) NOT NULL,
-`amount`  INT(100) NOT NULL,
-`type` ENUM('boss','gang') NOT NULL DEFAULT 'boss',
-PRIMARY KEY (`id`),
-UNIQUE KEY `job_name` (`job_name`),
-KEY `type` (`type`)
-);
-
-INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
-('police', 0, 'boss'),
-('medic', 0, 'boss'),
-('valsaloontender', 0, 'boss'),
-('blasaloontender', 0, 'boss'),
-('rhosaloontender', 0, 'boss'),
-('stdenissaloontender1', 0, 'boss'),
-('stdenissaloontender2', 0, 'boss'),
-('vansaloontender', 0, 'boss'),
-('armsaloontender', 0, 'boss'),
-('tumsaloontender', 0, 'boss'),
-('moonsaloontender1', 0, 'boss'),
-('moonsaloontender2', 0, 'boss'),
-('moonsaloontender3', 0, 'boss'),
-('moonsaloontender4', 0, 'boss'),
-('moonsaloontender5', 0, 'boss'),
-('stdeniswholesale', 0, 'boss'),
-('blkwholesale', 0, 'boss'),
-('railroad', 0, 'boss'),
-('govenor1', 0, 'boss'),
-('govenor2', 0, 'boss'),
-('govenor3', 0, 'boss'),
-('govenor4', 0, 'boss'),
-('govenor5', 0, 'boss'),
-('valweaponsmith', 0, 'boss'),
-('rhoweaponsmith', 0, 'boss'),
-('stdweaponsmith', 0, 'boss'),
-('tumweaponsmith', 0, 'boss'),
-('annweaponsmith', 0, 'boss');
-
-CREATE TABLE IF NOT EXISTS `management_funds` (
-`id` INT(11) NOT NULL AUTO_INCREMENT,
-`job_name` VARCHAR(50) NOT NULL,
-`amount`  INT(100) NOT NULL,
-`type` ENUM('boss','gang') NOT NULL DEFAULT 'boss',
-PRIMARY KEY (`id`),
-UNIQUE KEY `job_name` (`job_name`),
-KEY `type` (`type`)
-);
-
-INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
-('gang1', 0, 'gang');
 
 DROP TABLE IF EXISTS `blacksmith_stock`;
 CREATE TABLE IF NOT EXISTS `blacksmith_stock` (
@@ -591,64 +571,6 @@ CREATE TABLE IF NOT EXISTS `telegrams` (
   `birdstatus` TINYINT(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE IF NOT EXISTS `address_book` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `citizenid` VARCHAR(50) NOT NULL,
-  `name`  VARCHAR(50) NOT NULL,
-  `owner`  VARCHAR(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-DROP TABLE IF EXISTS `beekeeper_stock`;
-CREATE TABLE IF NOT EXISTS `beekeeper_stock` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `beekeeper` varchar(50) CHARACTER SET 'utf8mb4' DEFAULT NULL,
-  `item` varchar(50) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_bin' DEFAULT NULL,
-  `stock` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-DROP TABLE IF EXISTS `beekeeper_shop`;
-CREATE TABLE IF NOT EXISTS `beekeeper_shop` (
-  `shopid` varchar(255) NOT NULL,
-  `jobaccess` varchar(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_bin' DEFAULT NULL,
-  `displayname` varchar(255) NOT NULL,
-  `money` double(11,2) NOT NULL DEFAULT 0.00,
-  PRIMARY KEY (`shopid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO `beekeeper_shop` (`shopid`, `jobaccess`, `displayname`, `money`) VALUES
-('valbeekeepershop', 'valbeekeeper', 'Valentine Beekeeper Shop', 0),
-('strawbeekeepershop', 'strawbeekeeper', 'Strawberry Beekeeper Shop', 0),
-('blackbeekeepershop', 'blackbeekeeper', 'Blackwater Beekeeper Shop', 0),
-('mcfarbeekeepershop', 'mcfarbeekeeper', 'Mcfarlanes Beekeeper Shop', 0),
-('rhodesbeekeepershop', 'rhodesbeekeeper', 'Rhodes Beekeeper Shop', 0),
-('braithbeekeepershop', 'braithbeekeeper', 'Braithwaite Beekeeper Shop', 0);
-
-DROP TABLE IF EXISTS `beekeepershop_stock`;
-CREATE TABLE `beekeepershop_stock` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shopid` varchar(50) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_general_ci' DEFAULT NULL,
-  `items` varchar(50) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_bin' DEFAULT NULL,
-  `stock` int(11) NOT NULL DEFAULT 0,
-  `price` double(11,2) NOT NULL DEFAULT 0.00,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE `player_weapons`
-(
-    `id` int NOT NULL AUTO_INCREMENT,
-    `serial` varchar(16) NOT NULL,
-    `citizenid` varchar(9) NOT NULL,
-    `components` varchar(4096) NOT NULL DEFAULT '{}',
-    PRIMARY KEY (`id`)
-)
-ENGINE=InnoDB;
-
--- Sample Data
-INSERT INTO `player_weapons` (`id`, `serial`, `citizenid`, `components`) VALUES
-(1, 'BM123456', '666', '[{\"label\":\"Medium Scope\",\"comp\":\"comp\",\"name\":-1844750633,\"type\":\"scope\",\"model\":2044211697},{\"label\":\"Improved Rifling\",\"comp\":\"comp\",\"name\":488786388,\"type\":\"rifling\",\"model\":0},{\"label\":\"Wrap\",\"comp\":\"comp\",\"name\":1419411400,\"type\":\"wrap\",\"model\":890000845},{\"label\":\"Gold\",\"model\":0,\"name\":681399557,\"comp\":\"barrel\"},{\"label\":\"Gold\",\"model\":0,\"name\":-1217972306,\"comp\":\"trigger\"},{\"label\":\"Gold\",\"model\":0,\"name\":-1217972306,\"comp\":\"trigger\"},{\"label\":\"Gold\",\"model\":0,\"name\":1906948138,\"comp\":\"frame\"},{\"label\":\"Gold\",\"model\":0,\"name\":-897983242,\"comp\":\"cylinder\"},{\"label\":\"Gold\",\"model\":0,\"name\":-897983242,\"comp\":\"cylinder\"},{\"label\":\"Bounty Hunter Grain\",\"model\":680020185,\"name\":1043980328,\"comp\":\"gripbody\"},{\"label\":\"Flying Eagle\",\"model\":0,\"name\":2110982730,\"comp\":\"grip\"},{\"label\":\"Art Nouveau\",\"comp\":\"decal\",\"name\":1338763465,\"type\":\"frame\",\"model\":0},{\"label\":\"Art Nouveau\",\"comp\":\"decal\",\"name\":-1719565838,\"type\":\"barrel\",\"model\":0},{\"label\":\"Blued Steel\",\"comp\":\"decalcolor\",\"name\":-1822969329,\"type\":\"frame\",\"model\":0},{\"label\":\"Blued Steel\",\"comp\":\"decalcolor\",\"name\":1585980544,\"type\":\"barrel\",\"model\":0},{\"label\":\"Gold\",\"model\":0,\"name\":-1021999895,\"comp\":\"scope\"},{\"label\":\"White\",\"model\":0,\"name\":1170373926,\"comp\":\"wrapcolor\"}]');
 
 DROP TABLE IF EXISTS `weaponsmith_stock`;
 CREATE TABLE IF NOT EXISTS `weaponsmith_stock` (
